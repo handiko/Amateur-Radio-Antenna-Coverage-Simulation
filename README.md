@@ -1,4 +1,4 @@
-# Amateur Radio Antenna Coverage Simulation
+# Amateur Radio Antenna Coverage Simulation (A Beginner Tutorial)
 This writing demonstrates how to simulate an antenna coverage from a specific station setup on amateur radio frequency using the "ray-tracing" propagation model.
 
 The tool used in this writing is [Radio Mobile Online by VE2DBE](https://www.ve2dbe.com/rmonline_s.asp); therefore, big credits to him.
@@ -18,3 +18,22 @@ We are going to install an APRS digipeater (VHF: 144.390 MHz) on a mountain/hill
 6. Residential noise level.
 
 The constraints above are a simple-case assumption that more or less describes typical installation conditions.
+
+## Pick the Location
+
+<p align="center">
+  <img src="mainmenu.png" alt="mainmenu" width="700"/>
+</p>
+
+<p align="center">
+  <img src="map.png" alt="map" width="700"/>
+</p>
+
+<p align="center">
+  <img src="savelocation.png" alt="savelocation" width="700"/>
+</p>
+
+<p align="center">
+  <img src="confirmlisting.png" alt="confirmlisting" width="700"/>
+</p>
+
