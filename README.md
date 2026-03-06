@@ -30,10 +30,12 @@ You will be presented with the map. Go ahead, navigate the map to find your pref
   <img src="map.png" alt="map" width="700"/>
 </p>
 
+You will be redirected to the New Site page. Type the location description and click **"Add to My Sites"**.
 <p align="center">
   <img src="savelocation.png" alt="savelocation" width="700"/>
 </p>
 
+If you are successful, your location will be listed in the **"My Sites"** menu from the Main Menu options.
 <p align="center">
   <img src="confirmlisting.png" alt="confirmlisting" width="700"/>
 </p>
