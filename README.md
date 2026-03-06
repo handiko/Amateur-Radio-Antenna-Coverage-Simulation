@@ -27,6 +27,7 @@ We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) l
 | **Support** | 10m Tower | 10m Height |
 | **Environment** | Mountain/Hill |  ..   |
 -->
+
 ---
 
 ## Step 1: Picking the Location
