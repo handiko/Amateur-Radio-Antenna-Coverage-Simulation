@@ -3,6 +3,8 @@ This writing demonstrates how to simulate an antenna coverage from a specific st
 
 The tool used in this writing is [Radio Mobile Online by VE2DBE](https://www.ve2dbe.com/rmonline_s.asp), therefore big credits to him.
 
+![](./frontpage.png)
+
 ## Study Case
 The case that we are going to solve is as follows; 
 We are going to install an APRS digipeater (VHF: 144.390 MHz) at a mountain/hill. The equipments that will be used have the following characteristics/constraints:
