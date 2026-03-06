@@ -14,6 +14,10 @@ The primary tool used in this guide is [**Radio Mobile Online by VE2DBE**](https
 We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) located on a mountain or hill. To ensure a realistic simulation, we use "de-rated" values—adjusting ideal specs downward to account for real-world variables like weather and interference.
 
 ### Equipment & Environment Constraints
+<p align="center">
+  <img src="table.png" alt="table" width="600"/>
+</p>
+<!--
 | Component | Specification | Simulation Value (Adjusted) |
 | :--- | :--- | :--- |
 | **Transceiver** | Icom IC-2200 VHF | 10 Watts (Mid-Low Power) |
@@ -22,7 +26,7 @@ We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) l
 | **Feedline** | 15m RG-8 (Solid) | **-1.5 dB** (Loss de-rated) |
 | **Support** | 10m Tower | 10m Height |
 | **Environment** | Mountain/Hill |  ..   |
-
+-->
 ---
 
 ## Step 1: Picking the Location
