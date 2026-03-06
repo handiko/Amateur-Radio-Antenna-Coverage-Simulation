@@ -1,4 +1,4 @@
-# 📡 Amateur Radio Antenna Coverage Simulation: A Beginner's Guide
+# Amateur Radio Antenna Coverage Simulation: A Beginner's Guide
 
 This tutorial demonstrates how to simulate antenna coverage for a specific amateur radio station using the **"Ray-Tracing"** propagation model. This method is essential for visualizing how terrain and equipment choices impact your signal's reach.
 
@@ -10,7 +10,7 @@ The primary tool used in this guide is [**Radio Mobile Online by VE2DBE**](https
 
 ---
 
-## 🛠 Study Case: APRS Digipeater Installation
+## Study Case: APRS Digipeater Installation
 We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) located on a mountain or hill. To ensure a realistic simulation, we use "de-rated" values—adjusting ideal specs downward to account for real-world variables like weather and interference.
 
 ### Equipment & Environment Constraints
@@ -21,11 +21,11 @@ We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) l
 | **Antenna** | Telex HyGain V-2R | 5 dBi Gain |
 | **Feedline** | 15m RG-8 (Solid) | **-1.5 dB** (Loss de-rated) |
 | **Support** | 10m Tower | 10m Height |
-| **Environment** | Mountain/Hill | Residential Noise Level |
+| **Environment** | Mountain/Hill |     |
 
 ---
 
-## 📍 Step 1: Picking the Location
+## Step 1: Picking the Location
 1. **Open the Tool:** From the main menu, click the **"New Site"** button.
 <p align="center">
   <img src="mainmenu.png" alt="mainmenu" width="700"/>
@@ -45,8 +45,8 @@ We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) l
 
 ---
 
-## ⚙️ Step 2: Defining RF Parameters
-Navigate back to the main menu and click **"New Coverage"**. Enter the following parameters based on our study case:
+## Step 2: Defining RF Parameters
+Navigate back to the main menu and click **"New Coverage"**. Enter the following parameters based on our case study:
 
 * **Center Site:** Your saved location.
 * **Antenna Height:** 10m (Site) / 3m (Mobile/Car).
@@ -64,9 +64,13 @@ Navigate back to the main menu and click **"New Coverage"**. Enter the following
 
 Click **Submit** and wait for the calculation to process.
 
+<p align="center">
+  <img src="progress.png" alt="progress" width="700"/>
+</p>
+
 ---
 
-## 📊 Step 3: Evaluating the Results
+## Step 3: Evaluating the Results
 Once the coverage map is generated, click **"Add to my Coverage"** to save it to your profile.
 
 <p align="center">
@@ -77,6 +81,10 @@ Once the coverage map is generated, click **"Add to my Coverage"** to save it to
 * **Dark Green:** Strong signal coverage.
 * **Dark Orange:** Marginal coverage.
 * **Blank Spots:** No coverage (RF shadows).
+
+<p align="center">
+  <img src="evaluation.png" alt="evaluation" width="700"/>
+</p>
 
 > **Planning Tip:** To expand your network, choose new sites located within the **orange (marginal)** areas. This optimizes coverage overlap and reduces "dead zones" while maintaining redundancy.
 
