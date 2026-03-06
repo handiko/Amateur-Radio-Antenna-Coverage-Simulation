@@ -15,7 +15,7 @@ We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) l
 
 ### Equipment & Environment Constraints
 <p align="center">
-  <img src="table.png" alt="table" width="600"/>
+  <img src="table.png" alt="table" width="550"/>
 </p>
 <!--
 | Component | Specification | Simulation Value (Adjusted) |
