@@ -91,6 +91,8 @@ Once the coverage map is generated, click **"Add to my Coverage"** to save it to
   <img src="evaluation.png" alt="evaluation" width="700"/>
 </p>
 
+As you can see, from Mt.Karang Pandeglang, it can cover almost all of the Banten area, the Sunda Strait, Jakarta, Bogor, Karawang, a bit of West Lampung, and nearby regions.
+
 > **Planning Tip:** To expand your network, choose new sites located within the **orange (marginal)** areas. This optimizes coverage overlap and reduces "dead zones" while maintaining redundancy.
 
 <p align="center">
