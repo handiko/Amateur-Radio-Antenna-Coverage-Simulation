@@ -94,7 +94,7 @@ Once the coverage map is generated, click **"Add to my Coverage"** to save it to
 
 ---
 
-## 📝 Summary
-This guide provides a basic workflow for evaluating radio repeater sites using Radio Mobile Online. By inputting accurate hardware parameters and terrain data, you can effectively predict performance before ever stepping foot on the mountain. 
+## Summary
+This guide provides a basic workflow for evaluating radio repeater sites using Radio Mobile Online. By inputting accurate hardware parameters and terrain data, you can effectively predict performance before ever setting foot on the mountain. 
 
 *Note: These results are for demonstration and should always be verified with on-site field testing.*
