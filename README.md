@@ -77,3 +77,21 @@ The coverage map will be presented. It is recommended to save the current covera
 <p align="center">
   <img src="coverage.png" alt="coverage" width="700"/>
 </p>
+
+The dark green area is the strong signal coverage, and the dark orange area is the marginal coverage.
+
+If we zoom in on the map, we would see the granularity of the coverage. We will see the area which are the blank spots (no dark green or orange). If we want to plan, add another site, it is recommended to choose the location in the orange area (marginal coverage) to maximize the coverage area while optimizing the redundancy coverage.
+
+<p align="center">
+  <img src="evaluation.png" alt="evaluation" width="700"/>
+</p>
+
+The example below illustrates the additional sites to expand the coverage (blue star marker).
+
+<p align="center">
+  <img src="planning.png" alt="planning" width="700"/>
+</p>
+
+## Summary
+Here is a simple tutorial that describes the usage of the Radio Mobile Online coverage simulation tool. By choosing the right location and radio parameter, we can at a glance evaluate the coverage of the radio repeater site. This is a simple beginner-level tutorial. Any results presented here are for demonstration only and need to be evaluated further.
+
