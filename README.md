@@ -1,97 +1,92 @@
-# Amateur Radio Antenna Coverage Simulation (A Beginner Tutorial)
-This writing demonstrates how to simulate an antenna coverage from a specific station setup on amateur radio frequency using the "ray-tracing" propagation model.
+# 📡 Amateur Radio Antenna Coverage Simulation: A Beginner's Guide
 
-The tool used in this writing is [**Radio Mobile Online by VE2DBE**](https://www.ve2dbe.com/rmonline_s.asp); therefore, big credits to him.
+This tutorial demonstrates how to simulate antenna coverage for a specific amateur radio station using the **"Ray-Tracing"** propagation model. This method is essential for visualizing how terrain and equipment choices impact your signal's reach.
+
+The primary tool used in this guide is [**Radio Mobile Online by VE2DBE**](https://www.ve2dbe.com/rmonline_s.asp). All credit for this powerful simulation engine goes to him.
 
 <p align="center">
   <img src="frontpage.png" alt="frontpage" width="700"/>
 </p>
 
-## Study Case
-The case that we are going to solve is as follows; 
-We are going to install an APRS digipeater (VHF: 144.390 MHz) on a mountain/hill. The equipment that will be used has the following characteristics/constraints:
-1. **Icom IC-2200 VHF transceiver**, mid-lo-Tx Power (10 Watts), typical Rx sensitivity (0.13 uV). This value will be de-rated to 0.25 uV to account for the worst case.
-2. **Telex HyGain V-2R antenna** (5dBi of Gain)
-3. **15m of RG-8 cable**, solid dielectric (1.38 dB of attenuation). This value will be de-rated to -1.5 dB to account for the worst case.
-4. **10m high tower**
-5. Location is at a mountain/hill.
-6. Residential noise level.
+---
 
-The constraints above are a simple-case assumption that more or less describes typical installation conditions.
+## 🛠 Study Case: APRS Digipeater Installation
+We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) located on a mountain or hill. To ensure a realistic simulation, we use "de-rated" values—adjusting ideal specs downward to account for real-world variables like weather and interference.
 
-## Pick the Location
-From the main menu, locate the **"New Site"** button and click it.
+### Equipment & Environment Constraints
+| Component | Specification | Simulation Value (Adjusted) |
+| :--- | :--- | :--- |
+| **Transceiver** | Icom IC-2200 VHF | 10 Watts (Mid-Low Power) |
+| **Rx Sensitivity** | 0.13 µV (Typical) | **0.25 µV** (Worst-case assumption) |
+| **Antenna** | Telex HyGain V-2R | 5 dBi Gain |
+| **Feedline** | 15m RG-8 (Solid) | **-1.5 dB** (Loss de-rated) |
+| **Support** | 10m Tower | 10m Height |
+| **Environment** | Mountain/Hill | Residential Noise Level |
+
+---
+
+## 📍 Step 1: Picking the Location
+1. **Open the Tool:** From the main menu, click the **"New Site"** button.
 <p align="center">
   <img src="mainmenu.png" alt="mainmenu" width="700"/>
 </p>
 
-You will be presented with the map. Go ahead, navigate the map to find your preferred location. In this case, I will choose the Mt.Karang in Padeglang (Banten, Indonesia) as my preferred location. Click the **"Place cursor at center"** button, drag the pin, zoom in/out as needed, make sure the location is correct, and click **"Submit"**.
+2. **Navigate the Map:** Find your preferred location. 
+   * *Example:* This tutorial uses **Mt. Karang in Pandeglang (Banten, Indonesia)**.
+3. **Set the Pin:** Click **"Place cursor at center,"** drag the pin to your exact spot, and ensure the coordinates are correct before clicking **"Submit"**.
 <p align="center">
   <img src="map.png" alt="map" width="700"/>
 </p>
 
-You will be redirected to the New Site page. Type the location name and click **"Add to My Sites"**.
+4. **Save Site:** Name your location and click **"Add to My Sites"**. It will now appear in your **"My Sites"** menu for future use.
 <p align="center">
   <img src="savelocation.png" alt="savelocation" width="700"/>
 </p>
 
-If you are successful, your location will be listed in the **"My Sites"** menu from the Main Menu options.
-<p align="center">
-  <img src="confirmlisting.png" alt="confirmlisting" width="700"/>
-</p>
+---
 
-Congrats! You are successful to define a location. Now, back to the main menu by clicking the **"Return to Main Menu"** button.
+## ⚙️ Step 2: Defining RF Parameters
+Navigate back to the main menu and click **"New Coverage"**. Enter the following parameters based on our study case:
 
-## Define the RF Parameters
-From the main menu, click the **"New Coverage"** button.
-
-Enter the relevant parameters:
-1. **"Center Site"**: Your location name we just made earlier.
-2. **"Antenna Height"**: 10m above the ground (case study).
-3. **"Antenna Gain"**: 5dB (case study)
-4. **"Mobile Antenna Height"**: 3m (car's / mobile antenna)
-5. **"Mobile Antenna Gain"**: 3dB (mobile antenna)
-6. **"Freq"**: 144.39 MHz
-7. **"Tx Power (Watts)"**: 10 Watts (case study)
-8. **"Tx Line Loss (dB)"**: 1.5 dB (case study)
-9. **"Rx Line Loss (dB)"**: 1.0 dB (assumption)
-10. **"Rx threshold (uV)"**: 0.25 uV (case study)
-11. **"Required Reliability"**: 80 % (assumption)
-12. **"Maximum Range (km)"**: Choose whatever maximum range you want to evaluate. I personally choose 100 - 300 km. The maximum is 300 km.
+* **Center Site:** Your saved location.
+* **Antenna Height:** 10m (Site) / 3m (Mobile/Car).
+* **Antenna Gain:** 5 dB (Site) / 3 dB (Mobile).
+* **Frequency:** 144.390 MHz.
+* **Tx Power:** 10 Watts.
+* **Line Loss:** 1.5 dB (Tx) / 1.0 dB (Rx assumption).
+* **Rx Threshold:** 0.25 µV.
+* **Reliability:** 80% (Assumption).
+* **Maximum Range:** 100 – 300 km.
 
 <p align="center">
   <img src="rfparam.png" alt="rfparam" width="700"/>
 </p>
 
-After finishing, click **"Submit"**.
+Click **Submit** and wait for the calculation to process.
 
-<p align="center">
-  <img src="progress.png" alt="progress" width="700"/>
-</p>
+---
 
-If everything is okay, the calculation progress page is presented, and you need to wait until it finishes.
-
-## Evaluating The Results
-The coverage map will be presented. It is recommended to save the current coverage map by clicking the **"Add to my Coverage"** button.
+## 📊 Step 3: Evaluating the Results
+Once the coverage map is generated, click **"Add to my Coverage"** to save it to your profile.
 
 <p align="center">
   <img src="coverage.png" alt="coverage" width="700"/>
 </p>
 
-The dark green area is the strong signal coverage, and the dark orange area is the marginal coverage.
+### Interpreting the Map
+* **Dark Green:** Strong signal coverage.
+* **Dark Orange:** Marginal coverage.
+* **Blank Spots:** No coverage (RF shadows).
 
-If we zoom in on the map, we would see the granularity of the coverage. We will see the area which are the blank spots (no dark green or orange). If we want to plan, add another site, it is recommended to choose the location in the orange area (marginal coverage) to maximize the coverage area while optimizing the redundancy coverage.
-
-<p align="center">
-  <img src="evaluation.png" alt="evaluation" width="700"/>
-</p>
-
-The example below illustrates the additional sites to expand the coverage (blue star marker).
+> **Planning Tip:** To expand your network, choose new sites located within the **orange (marginal)** areas. This optimizes coverage overlap and reduces "dead zones" while maintaining redundancy.
 
 <p align="center">
   <img src="planning.png" alt="planning" width="700"/>
 </p>
 
-## Summary
-Here is a simple tutorial that describes the usage of the Radio Mobile Online coverage simulation tool. By choosing the right location and radio parameter, we can at a glance evaluate the coverage of the radio repeater site. This is a simple beginner-level tutorial. Any results presented here are for demonstration only and need to be evaluated further.
+---
 
+## 📝 Summary
+This guide provides a basic workflow for evaluating radio repeater sites using Radio Mobile Online. By inputting accurate hardware parameters and terrain data, you can effectively predict performance before ever stepping foot on the mountain. 
+
+*Note: These results are for demonstration and should always be verified with on-site field testing.*
