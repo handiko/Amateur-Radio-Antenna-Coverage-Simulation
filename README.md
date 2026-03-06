@@ -59,10 +59,21 @@ Enter the relevant parameters:
 11. **"Required Reliability"**: 80 % (assumption)
 12. **"Maximum Range (km)"**: Choose whatever maximum range you want to evaluate. I personally choose 100 - 300 km. The maximum is 300 km.
 
+<p align="center">
+  <img src="rfparam.png" alt="rfparam" width="700"/>
+</p>
+
 After finishing, click **"Submit"**.
+
+<p align="center">
+  <img src="progress.png" alt="progress" width="700"/>
+</p>
 
 If everything is okay, the calculation progress page is presented, and you need to wait until it finishes.
 
 ## Evaluating The Results
-The coverage map will be presented. It is recommended to save the current coverage map by clicking **"Add to my Coverage"** button.
+The coverage map will be presented. It is recommended to save the current coverage map by clicking the **"Add to my Coverage"** button.
 
+<p align="center">
+  <img src="coverage.png" alt="coverage" width="700"/>
+</p>
