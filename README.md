@@ -21,7 +21,7 @@ We will simulate the installation of an **APRS digipeater** (VHF: 144.390 MHz) l
 | **Antenna** | Telex HyGain V-2R | 5 dBi Gain |
 | **Feedline** | 15m RG-8 (Solid) | **-1.5 dB** (Loss de-rated) |
 | **Support** | 10m Tower | 10m Height |
-| **Environment** | Mountain/Hill |     |
+| **Environment** | Mountain/Hill |  ..   |
 
 ---
 
